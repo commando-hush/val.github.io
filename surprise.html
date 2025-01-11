@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            font-family: 'Georgia', serif;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        body {
+            background: url('C:/Users/HomePC/Documents/makeda/beach.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .message-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .heartfelt-message {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .violet-quote {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            font-style: italic;
+        }
+
+        .belly-rub {
+            font-size: 1.8rem;
+            margin-top: 20px;
+            color: #ffe4c4;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .button {
+            background: #ff4500;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <div class="heartfelt-message">Makeda, you are the love of my life.</div>
+        <div class="violet-quote">
+            "Spring, Summer, Autumn, and Winter. Many seasons have passed. But I know your still waiting for the one, where I return."
+        </div>
+        <div class="belly-rub">I promise I’ll always rub your belly to make you smile!</div>
+        <div class="button-container">
+            <button class="button" onclick="goToMouse()">See More Surprise!</button>
+        </div>
+    </div>
+
+    <script>
+        function goToMouse() {
+            window.open('mouse.html', '_blank');
+        }
+    </script>
+</body>
+</html>

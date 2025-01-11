@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5dc; /* Beige */
+            color: #6b4f4f;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 50px 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        button {
+            background: #fff;
+            color: #6b4f4f;
+            border: 2px solid #6b4f4f;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background: #6b4f4f;
+            color: white;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Makeda, Will You Be My Valentine? 💕</h1>
+    </header>
+    <div class="content">
+        <p>Will you make my day by saying yes? You are truly special to me. 💖</p>
+        <button onclick="yesResponse()">Yes 💖</button>
+        <button onclick="noResponse()">No 🙁</button>
+    </div>
+    <footer>
+        <p>Made with love by Victor 💌</p>
+    </footer>
+    <script>
+        let noCount = 0;
+
+        function yesResponse() {
+            window.location.href = "thank-you.html";
+        }
+
+        function noResponse() {
+            noCount++;
+            if (noCount < 3) {
+                alert("Please, please! 💔");
+            } else {
+                document.body.innerHTML = `
+                    <div style="background-color: black; color: beige; height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center;">
+                        <h1 style="font-size: 4rem;">You're a monkey! 🐵</h1>
+                    </div>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
